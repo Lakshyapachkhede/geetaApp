@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/red_back"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/shlok_list_item"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+
+        >
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shlok_item_dot"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:id="@+id/shlok_heading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="श्लोक"
+            android:textColor="@color/my_primary_color"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shlok_item_dot"
+            android:layout_marginEnd="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shlok_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/noto_sans_devanagari_semibold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="सन्तुष्ट: सततं योगी यतात्मा दृढनिश्चय: |\nमय्यर्पितमनोबुद्धिर्यो मद्भक्त: स मे प्रिय: ॥14॥\n"
+        android:textColor="@color/shlok_detail_text"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/shlok_list_item"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+
+        >
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shlok_item_dot"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="अर्थ"
+            android:textColor="@color/my_primary_color"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shlok_item_dot"
+            android:layout_marginEnd="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/meaning_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:id="@+id/shlok_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/hind_siliguri_medium"
+            android:paddingTop="8dp"
+            android:padding="16dp"
+            android:text="श्रीभगवानुवाच |\nलोकेऽस्मिन्द्विविधा निष्ठा पुरा प्रोक्ता मयानघ |\nज्ञानयोगेन साङ्ख्यानां कर्मयोगेन योगिनाम् ॥3॥\n श्रीभगवान बोले- हे निष्पाप! इस लोक में दो प्रकार की निष्ठा (साधन की परिपक्व अवस्था अर्थात पराकाष्ठा का नाम 'निष्ठा' है।) मेरे द्वारा पहले कही गई है। उनमें से सांख्य योगियों की निष्ठा तो ज्ञान योग से (माया से उत्पन्न हुए सम्पूर्ण गुण ही गुणों में बरतते हैं, ऐसे समझकर तथा मन, इन्द्रिय और शरीर द्वारा होने वाली सम्पूर्ण क्रियाओं में कर्तापन के अभिमान से रहित होकर सर्वव्यापी सच्चिदानंदघन परमात्मा में एकीभाव से स्थित रहने का नाम 'ज्ञान योग' है, इसी को 'संन्यास', 'सांख्ययोग' आदि नामों से कहा गया है।) और योगियों की निष्ठा कर्मयोग से (फल और आसक्ति को त्यागकर भगवदाज्ञानुसार केवल भगवदर्थ समत्व बुद्धि से कर्म करने का नाम 'निष्काम कर्मयोग' है, इसी को 'समत्वयोग', 'बुद्धियोग', 'कर्मयोग', 'तदर्थकर्म', 'मदर्थकर्म', 'मत्कर्म' आदि नामों से कहा गया है।) होती है। वधर्म के आचरण से इंद्रियादि को तपाकर शुद्ध करने का नाम तप है), दान, कीर्ति और अपकीर्ति- ऐसे ये प्राणियों के नाना प्रकार के भाव मुझसे ही होते हैं।"
+            android:textColor="@color/shlok_detail_meaning"
+            android:textSize="18sp"
+            android:lineSpacingExtra="4dp"
+
+            />
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="chapter_list_item_background">#fddb7b</color>
+    <color name="my_primary_color">#880002</color>
+    <color name="shlok_list_item_background">#fbb330</color>
+    <color name="shlok_list_item_border">#e9d480</color>
+<!--    <color name="shlok_list_item_border">#C68E17</color>-->
+    <color name="shlok_list_item_dot">#000</color>
+    <color name="shlok_detail_heading">#fbb330</color>
+    <color name="shlok_detail_text">#fff</color>
+    <color name="shlok_detail_meaning">#F4C542</color>
+
+</resources>
