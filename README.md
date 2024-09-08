@@ -13,19 +13,19 @@
 
 **All Adhyay**
 
-![Chapter List View](./screenshots/adhyay.jpg)
+![Chapter List View](./screenShots/adhyay.jpg)
 
 **All Shloks**
 
-![Shlok List View](./screenshots/shlok.jpg)
+![Shlok List View](./screenShots/shlok.jpg)
 
 **Shlok Detail**
 
-![Reels-style View](./screenshots/shlokDetail.jpg)
+![Reels-style View](./screenShots/shlokDetail.jpg)
 
 **Reels-style Scrolling**
 
-![Reels-style View](./screenshots/scroll.jpg)
+![Reels-style View](./screenShots/scroll.jpg)
 
 
 ## Installation
