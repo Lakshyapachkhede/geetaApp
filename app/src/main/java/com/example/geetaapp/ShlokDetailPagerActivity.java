@@ -1,7 +1,9 @@
 package com.example.geetaapp;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -40,14 +42,33 @@ public class ShlokDetailPagerActivity extends AppCompatActivity {
 
     }
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        if (item.getItemId() == android.R.id.home) {
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.tool_bar_option_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.toolbar_info){
+            showInfoDialog();
+            return true;
+        } else if (item.getItemId() == android.R.id.home) {
             finish();
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+    private void showInfoDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("About")
+                .setMessage("This app is created by Lakshya Pachkhede. For more projects, visit my GitHub (https://github.com/Lakshyapachkhede).\n")
+                .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
+                .show();
+    }
+
 
 
 
