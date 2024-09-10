@@ -109,6 +109,7 @@ public class ChapterShlokListActivity extends AppCompatActivity {
             public void onResponse(Call<Chapter> call, Response<Chapter> response) {
                 if (response.isSuccessful()) {
                     chapter = response.body();
+                    chapterName = chapter.getName();
                     getSupportActionBar().setTitle(chapter.getName());
 
 
